@@ -1,0 +1,34 @@
+<div class="datos-gruposinvestigacion" *ngIf="grupoinvestigacion">
+    <p>
+        Nombre de la Vacuna: {{grupoinvestigacion.nombre}}
+    </p>
+
+    <p>
+        ID de la Vacuna: {{grupoinvestigacion.id}}
+    </p>
+
+    <p>
+        Descripcion: {{grupoinvestigacion.descripcion}}
+    </p>
+
+    <p>
+        Tecnologia: {{grupoinvestigacion.tecnologia}}
+    </p>
+    <p>
+        Fecha: {{grupoinvestigacion.fecha}}
+    </p>
+    <p>
+        Fiable: {{grupoinvestigacion.fiable}}
+    </p>
+    <p>
+        Personas: {{grupoinvestigacion.personas}}
+    </p>
+
+    <button (click) = "delete()">
+        ELIMINAR
+    </button>
+
+    <button (click) = "modificar()">
+        MODIFICAR
+    </button>
+</div>
